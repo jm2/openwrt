@@ -167,7 +167,6 @@
 		usb_ohci: usb-ohci@20000 {
 			compatible = "generic-ohci";
 			reg = <0x20000 0x200>;
-			dma-coherent;
 
 			interrupt-parent = <&intc>;
 			interrupts = <28 2>;
@@ -183,7 +182,6 @@
 		usb_ehci: usb-ehci@21000 {
 			compatible = "generic-ehci";
 			reg = <0x21000 0x1000>;
-			dma-coherent;
 
 			interrupt-parent = <&intc>;
 			interrupts = <28 2>;
